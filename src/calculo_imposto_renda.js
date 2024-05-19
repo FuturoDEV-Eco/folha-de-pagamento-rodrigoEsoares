@@ -21,4 +21,6 @@ function calculo_imposto_renda(salario_bruto) {
   }
 }
 
+//console.log(calculo_imposto_renda(5000))
+
 module.exports = calculo_imposto_renda;
