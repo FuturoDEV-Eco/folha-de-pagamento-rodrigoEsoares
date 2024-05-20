@@ -28,17 +28,24 @@ input.question("Nome do funcionário: ", (name) => {
           salario_liquido: salario_liquido,
         };
 
-        console.log(`\n \n------- Folha de Pagamento  mês: ${holerite.mes_referencia}/2024 ----------\n
-        Nome: ${holerite.nome_funcionario} \n
-        CPF: ${holerite.cfp_funcionario}\n
-        Salário Bruto: R$ ${holerite.salario_bruto}\n
-        INSS: R$ ${holerite.INSS}\n
-        Imposto de Renda: R$ ${holerite.IR}\n
-        Salário Líquido: R$ ${holerite.salario_liquido}
-        `);
+        printScreen(holerite)
 
+       
         input.close();
       });
     });
   });
 });
+
+function printScreen(holerite){
+
+  console.log(`\n ------- Folha de Pagamento  mês: ${holerite.mes_referencia}/2024 ----------\n
+  Nome: ${holerite.nome_funcionario} \n
+  CPF: ${holerite.cfp_funcionario}\n
+  Salário Bruto: R$ ${holerite.salario_bruto}\n
+  INSS: R$ ${holerite.INSS}\n
+  Imposto de Renda: R$ ${holerite.IR}\n
+  Salário Líquido: R$ ${holerite.salario_liquido}
+  `);
+
+}
