@@ -18,23 +18,23 @@ input.question("Nome do funcionário: ", (name) => {
         const IR = calculo_imposto_renda(salario_bruto);
         const salario = Number(salario_bruto);
 
-        const funcionario = {
-          nome: name,
-          cpf: cpf,
-          mes: mes,
+        const holerite = {
+          nome_funcionario: name,
+          cfp_funcionario: cpf,
+          mes_referencia: mes,
           salario_bruto: salario.toFixed(2),
           INSS: INSS,
           IR: IR,
           salario_liquido: salario_liquido,
         };
 
-        console.log(`\n \n------- Folha de Pagamento  mês: ${funcionario.mes}/2024 ----------\n
-        Nome: ${funcionario.nome} \n
-        CPF: ${funcionario.cpf}\n
-        Salário Bruto: R$ ${funcionario.salario_bruto}\n
-        INSS: R$ ${funcionario.INSS}\n
-        Imposto de Renda: R$ ${funcionario.IR}\n
-        Salário Líquido: R$ ${funcionario.salario_liquido}
+        console.log(`\n \n------- Folha de Pagamento  mês: ${holerite.mes_referencia}/2024 ----------\n
+        Nome: ${holerite.nome_funcionario} \n
+        CPF: ${holerite.cfp_funcionario}\n
+        Salário Bruto: R$ ${holerite.salario_bruto}\n
+        INSS: R$ ${holerite.INSS}\n
+        Imposto de Renda: R$ ${holerite.IR}\n
+        Salário Líquido: R$ ${holerite.salario_liquido}
         `);
 
         input.close();
